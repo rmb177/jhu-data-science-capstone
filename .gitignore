@@ -1,3 +1,7 @@
 .DS_Store
 final
 data.zip
+.RData
+.RHistory
+data_sets
+
