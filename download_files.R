@@ -4,7 +4,7 @@ DATA_FILE <- "data.zip"
 # Download the zip file containing the data files from the course website 
 # if it doesn't exist in the current directory. Unzip the US files if they 
 # haven't already been unzipped.
-sc <- function()
+downloadFiles <- function()
 {
     if (!file.exists(DATA_FILE))
     {

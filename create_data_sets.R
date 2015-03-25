@@ -1,3 +1,5 @@
+
+
 DATA_SET_DIR = "data_sets"
 DATA_FILES = c("data_sets/training.txt", 
                "data_sets/validation.txt",
@@ -28,9 +30,9 @@ createDataSets <- function()
             {
                 if (length(lines) == 100)
                 {
-                    writeLines(lines[1:60], trainingConn)
-                    writeLines(lines[61:80], validationConn)
-                    writeLines(lines[81:100], testingConn)
+                    writeLines(stri_trans_tolower(lines[1:60]), trainingConn)
+                    writeLines(stri_trans_tolower(lines[61:80]), validationConn)
+                    writeLines(stri_trans_tolower(lines[81:100]), testingConn)
                 }
             }
             close(con)
